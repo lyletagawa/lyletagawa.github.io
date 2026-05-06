@@ -90,7 +90,7 @@
     </div>
     
     <div class="content">
-      <h6 class="subtitle is-6 date" style="line-height:0em">May. 2, 2026 &middot; 6 min read</h6>
+      <h6 class="subtitle is-6 date" style="line-height:0em">May. 2, 2026 &middot; 5 min read</h6>
       <h2 id="jevons-paradox">Jevons Paradox</h2>
 <p>You&rsquo;ve just cut your cloud costs by 40%. Six months later, your bill is higher than before. You&rsquo;ve made your API 10x faster. Now you&rsquo;re handling 50x more traffic and your infrastructure is buckling. You&rsquo;ve deployed AI agents to review every pull request. Merge volume doubles. Your AI compute bill is a line item you didn&rsquo;t budget for.</p>
 <p>Welcome to Jevons Paradox: efficiency improvements don&rsquo;t reduce consumption. They increase it.</p>
@@ -108,42 +108,34 @@
 <h2 id="how-it-manifests">How It Manifests</h2>
 <p><strong>The cloud cost spiral</strong>. Azul reported a cloud migration that reduced per-transaction costs by 42%, yet total cloud spend doubled over three years as they processed significantly more transactions and launched services that weren&rsquo;t viable before (Sellers, 2025).</p>
 <p><strong>The performance trap</strong>. Figma reduced file load times by 33% for the slowest loads, but immediately increased server-side decoding load by 30%, requiring a separate infrastructure optimization to absorb the new demand (Figma Engineering, 2025a; 2025b).</p>
-<p><strong>The agentic AI paradox</strong>. Cloudflare deployed a multi-agent AI code review system that automatically reviews every merge request. Within weeks, weekly merge volume increased from roughly 5,600 to over 8,700, with one week reaching 10,952. The system ran 131,246 review cycles in a single month at $0.98 per review (Cloudflare, 2026). AI review didn’t reduce workload. It unlocked a merge velocity that human reviewers alone could not have sustained.</p>
+<p><strong>The agentic AI paradox</strong>. Cloudflare deployed a multi-agent AI code review system that automatically reviews every merge request. Within weeks, weekly merge volume increased from roughly 5,600 to over 8,700, with one week reaching 10,952 (Cloudflare, 2026a). The system ran 131,246 review cycles in a single month at a median cost of $0.98 per review (Cloudflare, 2026b). AI review didn’t reduce workload. It unlocked a merge velocity that human reviewers alone could not have sustained.</p>
 <h2 id="how-to-manage-jevons-paradox">How to Manage Jevons Paradox</h2>
-<h3 id="1-plan-for-rebound">1. Plan for Rebound</h3>
-<p>When optimizing, assume consumption will increase, not decrease.</p>
-<p><strong>Bad Planning</strong>: &ldquo;This optimization will reduce our costs by 50%&rdquo;</p>
-<p><strong>Good Planning</strong>: &ldquo;This optimization will reduce per-unit costs by 50%. We expect usage to increase 2-3x as new use cases become viable.&rdquo;</p>
-<h3 id="2-implement-economic-constraints">2. Implement Economic Constraints</h3>
-<p>Efficiency removes natural constraints. Add intentional ones:</p>
+<p><strong>Plan for Rebound</strong>. When optimizing, assume consumption will increase, not decrease.</p>
+<ul>
+<li>Bad Planning: &ldquo;This optimization will reduce our costs by 50%&rdquo;</li>
+<li>Good Planning: &ldquo;This optimization will reduce per-unit costs by 50%. We expect usage to increase 2-3x as new use cases become viable.&rdquo;</li>
+</ul>
+<p><strong>Implement Economic Constraints</strong>. Efficiency removes natural constraints. Add intentional ones:</p>
 <ul>
 <li>Rate limiting even when technically unnecessary</li>
 <li>Cost allocation and chargebacks to teams</li>
 <li>Quotas on resources even when capacity exists</li>
 <li>Approval processes for new high-volume use cases</li>
 </ul>
-<h3 id="3-monitor-leading-indicators">3. Monitor Leading Indicators</h3>
-<p>Track metrics that predict rebound before it impacts costs (Forsgren et al., 2018):</p>
+<p>Release capacity intentionally based on business priorities (Kim et al., 2016).</p>
+<p><strong>Monitor Leading Indicators</strong>. Track metrics that predict rebound before it impacts costs (Forsgren et al., 2018):</p>
 <ul>
 <li>Request rates, not just response times</li>
 <li>Number of services/deployments, not just deployment speed</li>
 <li>Data growth rates, not just storage costs</li>
 <li>Feature usage patterns, not just feature performance</li>
 </ul>
-<h3 id="4-separate-efficiency-from-capacity">4. Separate Efficiency from Capacity</h3>
-<p>Make efficiency improvements without immediately exposing new capacity:</p>
+<p><strong>Align Incentives</strong>:</p>
 <ul>
-<li>Optimize database, but maintain rate limits</li>
-<li>Improve API performance, but keep request quotas</li>
-<li>Reduce LLM costs, but enforce usage quotas per feature</li>
+<li>Bad Incentives: &ldquo;Your team&rsquo;s budget is based on last year&rsquo;s costs.&rdquo; Result: Teams avoid optimization to maintain budget</li>
+<li>Good Incentives: &ldquo;Your team gets 50% of cost savings for new initiatives.&rdquo; Result: Teams optimize but use gains strategically</li>
 </ul>
-<p>Release capacity intentionally based on business priorities (Kim et al., 2016).</p>
-<h3 id="5-align-incentives">5. Align Incentives</h3>
-<p><strong>Bad Incentives</strong>: &ldquo;Your team&rsquo;s budget is based on last year&rsquo;s costs&rdquo;
-Result: Teams avoid optimization to maintain budget</p>
-<p><strong>Good Incentives</strong>: &ldquo;Your team gets 50% of cost savings for new initiatives&rdquo;
-Result: Teams optimize but use gains strategically</p>
-<p>For individual contributors, three applications stand out. Document the counterfactual: record what costs or load would have been without your work, so your impact is visible even as rebound erodes absolute gains. Negotiate scope when optimizing: establish explicit limits (&ldquo;this supports current usage plus 50% growth; beyond that requires architectural changes&rdquo;). Build observability into your optimizations: dashboards showing cost per transaction alongside total cost make rebound visible before it becomes a crisis, and give you evidence to advocate for formal capacity planning (Allspaw, 2008).</p>
+<p>For individual contributors, two applications stand out. Document the counterfactual: record what costs or load would have been without your work, so your impact is visible even as rebound erodes absolute gains. Negotiate scope when optimizing: establish explicit limits (&ldquo;this supports current usage plus 50% growth; beyond that requires architectural changes&rdquo;).</p>
 <h2 id="put-it-into-practice">Put It Into Practice</h2>
 <p>Jevons Paradox is not a failure mode. It is the predictable result of removing a constraint: systems expand to fill new space (Meadows, 2008). Every optimization changes what is economically viable, and demand follows.</p>
 <p>The question is not whether consumption will increase after your next optimization. It will. The question is whether you planned for it.</p>
@@ -153,16 +145,16 @@ Result: Teams optimize but use gains strategically</p>
 <p>Khazzoom, J. Daniel (1980). &ldquo;Economic Implications of Mandated Efficiency Standards.&rdquo; <em>The Energy Journal</em>, 1(4): 21-40. <a href="https://doi.org/10.5547/ISSN0195-6574-EJ-Vol1-No4-2">https://doi.org/10.5547/ISSN0195-6574-EJ-Vol1-No4-2</a></p>
 <p>Sorrell, Steve (2009). &ldquo;Jevons&rsquo; Paradox revisited: The evidence for backfire.&rdquo; <em>Energy Policy</em>, 37(4): 1456-1469. <a href="https://doi.org/10.1016/j.enpol.2008.09.056">https://doi.org/10.1016/j.enpol.2008.09.056</a></p>
 <p>Meadows, Donella H. (2008). <em>Thinking in Systems: A Primer</em>. White River Junction, VT: Chelsea Green Publishing. <a href="https://www.chelseagreen.com/product/thinking-in-systems/">https://www.chelseagreen.com/product/thinking-in-systems/</a></p>
-<p>Cloudflare (2026). &ldquo;Orchestrating AI code review at scale.&rdquo; <em>Cloudflare Blog</em>, April 20. <a href="https://blog.cloudflare.com/ai-code-review/">https://blog.cloudflare.com/ai-code-review/</a></p>
+<p>Cloudflare (2026a). &ldquo;The AI engineering stack we built internally — on the platform we ship.&rdquo; <em>Cloudflare Blog</em>, April 20. <a href="https://blog.cloudflare.com/internal-ai-engineering-stack/">https://blog.cloudflare.com/internal-ai-engineering-stack/</a></p>
+<p>Cloudflare (2026b). &ldquo;Orchestrating AI code review at scale.&rdquo; <em>Cloudflare Blog</em>, April 20. <a href="https://blog.cloudflare.com/ai-code-review/">https://blog.cloudflare.com/ai-code-review/</a></p>
 <p>Figma Engineering (2025a). &ldquo;Speeding Up File Load Times, One Page At A Time.&rdquo; <em>Figma Engineering Blog</em>. <a href="https://www.figma.com/blog/speeding-up-file-load-times-one-page-at-a-time/">https://www.figma.com/blog/speeding-up-file-load-times-one-page-at-a-time/</a></p>
 <p>Figma Engineering (2025b). &ldquo;Supporting Faster File Load Times with Memory Optimizations in Rust.&rdquo; <em>Figma Engineering Blog</em>. <a href="https://www.figma.com/blog/supporting-faster-file-load-times-with-memory-optimizations-in-rust/">https://www.figma.com/blog/supporting-faster-file-load-times-with-memory-optimizations-in-rust/</a></p>
-<p>Allspaw, John (2008). <em>The Art of Capacity Planning</em>. Sebastopol, CA: O&rsquo;Reilly Media. <a href="https://www.oreilly.com/library/view/the-art-of/9780596518578/">https://www.oreilly.com/library/view/the-art-of/9780596518578/</a></p>
 <p>Forsgren, Nicole, et al. (2018). <em>Accelerate: The Science of Lean Software and DevOps</em>. Portland, OR: IT Revolution Press. <a href="https://itrevolution.com/product/accelerate/">https://itrevolution.com/product/accelerate/</a></p>
 <p>Kim, Gene, et al. (2016). <em>The DevOps Handbook</em>. Portland, OR: IT Revolution Press. <a href="https://itrevolution.com/product/the-devops-handbook/">https://itrevolution.com/product/the-devops-handbook/</a></p>
 <p>Sellers, Scott (2025). &ldquo;Why Cloud Efficiency is Driving More IT Spending, Not Less.&rdquo; <em>Azul Newsroom</em>, August 21. <a href="https://azul.com/newsroom/why-cloud-efficiency-is-driving-more-it-spending-not-les">https://azul.com/newsroom/why-cloud-efficiency-is-driving-more-it-spending-not-les</a></p>
 <p><em>Thumbnail: Watt&rsquo;s Steam Engine. British Cigarette Cards, George Arents Collection. The New York Public Library. <a href="https://picryl.com/media/watts-steam-engine-589e99">picryl.com</a></em></p>
 <h2 id="changelog">Changelog</h2>
-<p><strong>2026-05-02</strong> Reorganized to consolidate redundant sections: merged &ldquo;Why This Matters for Technical Leadership&rdquo; and three case studies into &ldquo;How It Manifests&rdquo;; absorbed IC strategic guidance into &ldquo;How to Manage Jevons Paradox&rdquo;; removed duplicate database optimization case study.</p>
+<p><strong>2026-05-05</strong> Reorganized to consolidate redundant sections: merged &ldquo;Why This Matters for Technical Leadership&rdquo; and three case studies into &ldquo;How It Manifests&rdquo;; absorbed IC strategic guidance into &ldquo;How to Manage Jevons Paradox&rdquo;; removed duplicate database optimization case study.</p>
 
       <hr>
       
