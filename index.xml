@@ -6,7 +6,16 @@
     <description>Recent content on hi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 07 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://lyletagawa.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://lyletagawa.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Age-Based Live Event Caching</title>
+      <link>https://lyletagawa.com/posts/live-event-caching/</link>
+      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://lyletagawa.com/posts/live-event-caching/</guid>
+      <description>Standard LRU caching evicts the exact segments live viewers need when they rewind. Netflix&amp;rsquo;s patent US 12,621,504 B2 describes a smarter approach: use segment age and distributed ownership to protect those segments without bloating every edge server.</description>
+    </item>
+    
     <item>
       <title>LLM Context Biases</title>
       <link>https://lyletagawa.com/posts/llm-context-biases/</link>
