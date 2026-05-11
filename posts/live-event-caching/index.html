@@ -92,7 +92,7 @@
     <div class="content">
       <h6 class="subtitle is-6 date" style="line-height:0em">May. 11, 2026 &middot; 6 min read</h6>
       <h2 id="age-based-live-event-caching">Age-Based Live Event Caching</h2>
-<p>65 million people watched the Tyson-Paul fight on Netflix in November 2024, the largest concurrent streaming audience on record (Rayburn, 2025). Many viewers rewound. Rewinding by a few minutes requests segments that receive relatively little traffic at the live edge. A standard LRU cache treats low request frequency as a signal to evict, adding latency for those viewers.</p>
+<p>Netflix&rsquo;s stream of the Tyson-Paul fight in November 2024 peaked at 65 million concurrent viewers (Rayburn, 2025). Many viewers rewound their stream. Rewinding by a few minutes requests segments that receive relatively little traffic at the live edge. A standard LRU cache treats low request frequency as a signal to evict, adding latency for those viewers.</p>
 <p>The gap between what viewers want and what edge servers preserve is the problem a recent Netflix patent addresses (Newton, 2026).</p>
 <h2 id="what-is-the-live-caching-problem">What Is the Live Caching Problem?</h2>
 <p>Standard CDN edge caching works well for video-on-demand. Popular films accumulate requests. Niche titles gradually drop out of cache. The access pattern drives retention. LRU aligns cache incentives with actual demand (Hasslinger et al., 2023).</p>
