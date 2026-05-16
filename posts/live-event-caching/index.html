@@ -97,8 +97,8 @@
 <h2 id="what-is-the-live-caching-problem">What Is the Live Caching Problem?</h2>
 <p>Standard CDN edge caching works well for video-on-demand. Popular films accumulate requests. Niche titles gradually drop out of cache. LRU aligns cache incentives with actual demand (Hasslinger et al., 2023).</p>
 <p>Live events break this alignment. During a live stream, nearly all viewers watch the live edge. Two-minute-old segments receive a fraction of the traffic that two-second-old segments do. LRU interprets sparse access as low value and evicts accordingly. When a viewer scrubs backward (rewinds), the edge server has nothing to serve. It must fetch from origin or a mid-tier cache, adding latency and load to the upstream link (Liu, Lynch, and Newton, 2025).</p>
-<p>The obvious fix is to protect every segment on every edge server for the event&rsquo;s duration. That solves scrubbing but scales with the product of stream count, rendition count, and event duration. Memory becomes the new constraint.</p>
-<p>Netflix&rsquo;s patent US 12,621,504 B2 describes a third path (Newton, 2026).</p>
+<p>Another approach is to protect every segment on every edge server for the event&rsquo;s duration. That solves scrubbing but scales with the product of stream count, rendition count, and event duration. Memory becomes the new constraint.</p>
+<p>Netflix&rsquo;s patent US 12,621,504 B2 describes a third approach (Newton, 2026).</p>
 <h2 id="the-assignment-approach">The Assignment Approach</h2>
 <p>Each live event downloadable (a specific encoded rendition at a given bitrate and resolution) is assigned to exactly one edge server per distribution center. The assignment uses a consistent hash on the downloadable&rsquo;s identifier. Every edge server independently computes the same assignment without runtime coordination.</p>
 <p>The assigned edge server caches every downloaded segment of its assigned downloadable in a high-priority list. Nothing in that list gets evicted while the live event is active.</p>
