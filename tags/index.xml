@@ -80,33 +80,6 @@
     </item>
     
     <item>
-      <title>apocryphal</title>
-      <link>https://lyletagawa.com/tags/apocryphal/</link>
-      <pubDate>Sun, 17 May 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://lyletagawa.com/tags/apocryphal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cognitive</title>
-      <link>https://lyletagawa.com/tags/cognitive/</link>
-      <pubDate>Sun, 17 May 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://lyletagawa.com/tags/cognitive/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>risk</title>
-      <link>https://lyletagawa.com/tags/risk/</link>
-      <pubDate>Sun, 17 May 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://lyletagawa.com/tags/risk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>caching</title>
       <link>https://lyletagawa.com/tags/caching/</link>
       <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
@@ -139,6 +112,15 @@
       <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
       
       <guid>https://lyletagawa.com/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cognitive</title>
+      <link>https://lyletagawa.com/tags/cognitive/</link>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://lyletagawa.com/tags/cognitive/</guid>
       <description></description>
     </item>
     
