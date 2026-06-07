@@ -24,6 +24,7 @@
       
       <guid>https://lyletagawa.com/posts/distributed-causation/</guid>
       <description>Complex failures don&amp;rsquo;t have a single root cause. Complex failures have many causes that are distributed across time, systems, and organizational boundaries, and fixing just a single &amp;ldquo;root&amp;rdquo; cause leaves the rest in place.</description>
+      <media:content url="https://lyletagawa.com/images/distributed-causation.jpg" medium="image" />
     </item>
     
     <item>
@@ -33,6 +34,7 @@
       
       <guid>https://lyletagawa.com/posts/satisficing/</guid>
       <description>The best decision is often the fastest one you can defend, not the optimal one you never finish searching for.</description>
+      <media:content url="https://lyletagawa.com/images/satisficing.jpg" medium="image" />
     </item>
     
     <item>
@@ -42,6 +44,7 @@
       
       <guid>https://lyletagawa.com/posts/influence-by-alignment/</guid>
       <description>Authority centralizes decisions with whoever has the title. Alignment distributes them to whoever has the context, which is almost never the same person.</description>
+      <media:content url="https://lyletagawa.com/images/influence-by-alignment.jpg" medium="image" />
     </item>
     
     <item>
@@ -61,7 +64,7 @@
       
       <guid>https://lyletagawa.com/posts/llm-context-biases/</guid>
       <description>Primacy bias, recency bias, sycophancy, and anchoring are predictable distortions in how LLMs weight information. Understanding them changes how you prompt, evaluate, and trust model outputs.</description>
-      <media:content url="https://lyletagawa.com/images/illusion.png" medium="image" />
+      <media:content url="https://lyletagawa.com/images/llm-context-biases.jpg" medium="image" />
     </item>
     
     <item>
@@ -71,7 +74,7 @@
       
       <guid>https://lyletagawa.com/posts/jevons-paradox/</guid>
       <description>Why efficiency improvements in technology often increase total consumption rather than reduce it, and how leaders can anticipate and manage the inevitable rebound.</description>
-      <media:content url="https://lyletagawa.com/images/jevons-paradox.jpg" medium="image" />
+      <media:content url="https://lyletagawa.com/images/jevons-paradox-jam.jpg" medium="image" />
     </item>
     
     <item>
@@ -81,7 +84,7 @@
       
       <guid>https://lyletagawa.com/posts/ooda-loop/</guid>
       <description>How John Boyd&amp;rsquo;s OODA Loop (Observe, Orient, Decide, Act) applies to technology leadership, and practical strategies for eliminating the bottlenecks that slow your competitive cycles.</description>
-      <media:content url="https://lyletagawa.com/images/ooda-loop.jpg" medium="image" />
+      <media:content url="https://lyletagawa.com/images/ooda-loop-f86.jpg" medium="image" />
     </item>
     
     <item>
