@@ -23,7 +23,7 @@
       <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
       
       <guid>https://lyletagawa.com/posts/tcp-congestion-control/</guid>
-      <description>No one tells TCP how fast to send. Forty years of algorithms, from Reno to BBR, have tried to teach it, and the one in your kernel still chases a ceiling.</description>
+      <description>In 1986, a network slowdown of nearly a thousandfold forced Van Jacobson to invent TCP congestion control. Reno, CUBIC, and BBR are the forty years of guesses that followed, and the guessing continues today.</description>
       <media:content url="https://lyletagawa.com/images/tcp-congestion-control.png" medium="image" />
     </item>
     
