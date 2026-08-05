@@ -23,7 +23,7 @@
       <pubDate>Sun, 26 Jul 2026 00:00:00 +0000</pubDate>
       
       <guid>https://lyletagawa.com/posts/luck/</guid>
-      <description>Luck decides more than most people are willing to admit. Hard work and grit determine how ready you are for it.</description>
+      <description>Luck decides more than most are willing to admit. Hard work and grit determine how ready you are for it.</description>
       <media:content url="https://lyletagawa.com/images/luck.png" medium="image" />
     </item>
     
@@ -53,7 +53,7 @@
       <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
       
       <guid>https://lyletagawa.com/posts/tcp-congestion-control/</guid>
-      <description>In 1986, a network slowdown of nearly a thousandfold forced Van Jacobson to invent TCP congestion control. Reno, CUBIC, and BBR are the forty years of guesses that followed, and the guessing continues today.</description>
+      <description>In 1986, a network slowdown forced Van Jacobson to invent TCP congestion control. Reno, CUBIC, and BBR mark three different eras of solving that problem.</description>
       <media:content url="https://lyletagawa.com/images/tcp-congestion-control.png" medium="image" />
     </item>
     
@@ -63,7 +63,7 @@
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
       
       <guid>https://lyletagawa.com/posts/bloom-filter/</guid>
-      <description>A Bloom filter checks whether something belongs to a set without storing the set. Firefox&amp;rsquo;s CRLite version compresses revocation data for nearly a billion certificates into 4 megabytes, guaranteeing only what&amp;rsquo;s absent.</description>
+      <description>A Bloom filter checks whether something belongs to a set without storing the set. Firefox&amp;rsquo;s CRLite compresses revocation data for a billion certificates into 4 megabytes.</description>
       <media:content url="https://lyletagawa.com/images/bloom-filter.png" medium="image" />
     </item>
     

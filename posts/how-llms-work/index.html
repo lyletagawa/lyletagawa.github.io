@@ -113,7 +113,7 @@
       <p><img src="/images/how-llms-work.jpg" alt="Working notes on how LLMs train and generate text. Probably mostly right, certainly incomplete.">
 <em>&ldquo;Library card catalog.&rdquo; Photo: <a href="https://www.flickr.com/photos/akt_uz/45188906785/">AKT.UZ (2018)</a>. Public domain.</em></p>
 <h2 id="how-llms-work">How LLMs Work</h2>
-<p>Someone asks an LLM how many r&rsquo;s are in &ldquo;strawberry&rdquo; and the model says two<sup><a href="#ref-1" title="Hacker News (2024). All 3 models you ranked cannot get how many r&#39;s are in strawberry correct. Hacker News.">[1]</a></sup>. You might assume the model struggles to count. The real problem is that the model never saw the word &ldquo;strawberry&rdquo; in the first place.</p>
+<p>Someone asks an LLM how many r&rsquo;s are in &ldquo;strawberry&rdquo; and the model says two<sup><a href="#ref-1" title="Hacker News (2024). All 3 models you ranked cannot get how many r&#39;s are in strawberry correct. Hacker News.">[1]</a></sup>. You might assume the model can&rsquo;t count. The real problem is that the model never saw the word &ldquo;strawberry&rdquo; in the first place.</p>
 <p>Depending on the model, &ldquo;strawberry&rdquo; might be tokenized into [&ldquo;str&rdquo;, &ldquo;aw&rdquo;, &ldquo;berry&rdquo;] or [&ldquo;straw&rdquo;, &ldquo;berry&rdquo;]. The letters never existed as separate inputs. The model received a different task than the one you described<sup><a href="#ref-2" title="0xkato (2026). How LLMs Actually Work. 0xkato.xyz.">[2]</a></sup>.</p>
 <p>Most model failures make more sense once you know what&rsquo;s happening inside.</p>
 <h2 id="your-prompt-becomes-numbers">Your Prompt Becomes Numbers</h2>
