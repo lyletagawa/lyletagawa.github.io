@@ -118,7 +118,7 @@
 <p>At scale, this is impractical. A service handling ten thousand requests per second accumulates 864 million latency values per day. Storing and sorting that dataset to answer &ldquo;what was the p99 in the last five minutes?&rdquo; costs more than production can afford.</p>
 <p>Monitoring systems solve this with sketches. A sketch compresses a large dataset into a compact structure that answers statistical queries with a predictable error ceiling, using a fraction of the memory that computing it directly would require. The ceiling is configured when you create the sketch. More memory buys tighter accuracy.</p>
 <h2 id="what-t-digest-does">What t-Digest Does</h2>
-<p>Ted Dunning and Otmar Ertl introduced t-digest as a sketch optimized for quantile estimation<sup><a href="#ref-1" title="Dunning, Ted and Otmar Ertl (2019). Computing Extremely Accurate Quantiles Using t-Digests. arXiv:1902.04023.">[1]</a></sup>. The key property is that its accuracy is highest at the tails and lowest near the median.</p>
+<p>Ted Dunning introduced t-digest in 2013 as a sketch optimized for quantile estimation, later formalized with Otmar Ertl in a more rigorous 2019 treatment<sup><a href="#ref-1" title="Dunning, Ted and Otmar Ertl (2019). Computing Extremely Accurate Quantiles Using t-Digests. arXiv:1902.04023.">[1]</a></sup>. The key property is that its accuracy is highest at the tails and lowest near the median.</p>
 <p>t-digest processes observations one at a time without holding the raw data. Each observation is absorbed into the nearest eligible centroid or starts a new one, then discarded. The only persistent structure is a list of centroids. Each stores a mean value and a weight representing the number of observations it covers.</p>
 <p>The compression is dramatic. A thousand latency measurements compress into dozens of centroids. Cameron Davidson-Pilon fed eight megabytes of Pareto-distributed data into a t-digest and measured the output at five kilobytes, with an error rate below 0.002%<sup><a href="#ref-2" title="Davidson-Pilon, Cameron (2015). Percentile and Quantile Estimation of Big Data: The t-Digest. DataOrigami.">[2]</a></sup>.</p>
 <p>Centroids near the tails are small and numerous, each representing few data points. Centroids near the median are large and few, each covering many values<sup><a href="#ref-1" title="Dunning, Ted and Otmar Ertl (2019). Computing Extremely Accurate Quantiles Using t-Digests. arXiv:1902.04023.">[1]</a></sup>.</p>
@@ -160,7 +160,8 @@
 <p><strong>The exponential histogram alternative.</strong> OpenTelemetry&rsquo;s exponential histograms use a similar principle through a different mechanism. Bucket boundaries scale geometrically, concentrating precision at the tails without upfront configuration. Both solve the same problem from different directions (<a href="https://opentelemetry.io/docs/specs/otel/metrics/data-model/#exponential-histograms">OpenTelemetry, 2024</a>).</p>
 <hr>
 <h2 id="changelog">Changelog</h2>
-<p><strong>2026-06-21</strong> Initial draft.</p>
+<p><strong>2026-08-08</strong> Corrected t-digest&rsquo;s attribution: Ted Dunning introduced it alone in 2013; Otmar Ertl joined for the more rigorous 2019 formalization.<br>
+<strong>2026-06-21</strong> Initial draft.</p>
 
       <hr>
       

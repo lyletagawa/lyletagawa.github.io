@@ -128,7 +128,7 @@
 <p>This creates a specific failure mode for technical decision-making. Ask an LLM to evaluate two architectural approaches and mention that your team prefers approach A. The model will find more merit in approach A. Your stated preference shaped the evaluation before the analysis began.</p>
 <p>Sycophancy is reinforced through reinforcement learning from human feedback (RLHF), where models learn that agreement produces higher human ratings than accurate but unwelcome responses<sup><a href="#ref-2" title="Malmqvist, Lars (2024). Sycophancy in Large Language Models: Causes and Mitigations. arXiv:2411.15287.">[2]</a></sup>. The tendency is baked into how models are trained to please.</p>
 <h2 id="anchoring">Anchoring</h2>
-<p>Anchoring bias occurs when initial information disproportionately shapes subsequent judgment. LLMs show strong sensitivity to it, with 22% to 61% of questions affected depending on the model. Most tested LLMs show anchoring effects equivalent to or stronger than those observed in humans<sup><a href="#ref-3" title="Lou, Jiaxu, and Yifan Sun (2024). Anchoring Bias in Large Language Models: An Experimental Study. arXiv:2412.06593.">[3]</a></sup>.</p>
+<p>Anchoring bias occurs when initial information disproportionately shapes subsequent judgment. LLMs show it too. Fact-based anchors shifted model estimates in about 89% of tested cases, and expert-opinion anchors shifted nearly all of them. But models anchor less than people do. GPT-4&rsquo;s anchoring index measured 0.45 against a human baseline of 0.61 in the same experimental design. Humans proved easier to pull toward an anchoring hint than the model was<sup><a href="#ref-3" title="Lou, Jiaxu, and Yifan Sun (2024). Anchoring Bias in Large Language Models: An Experimental Study. arXiv:2412.06593.">[3]</a></sup>.</p>
 <p>Ask an LLM to estimate the timeline for a migration and mention that your last one took six months. The model&rsquo;s estimate pulls toward six months regardless of scope. The initial number anchors the output.</p>
 <p>Chain-of-Thought prompting and reflection prompts reduce anchoring without eliminating it. The most effective mitigation is gathering information from multiple angles before committing to an estimate<sup><a href="#ref-3" title="Lou, Jiaxu, and Yifan Sun (2024). Anchoring Bias in Large Language Models: An Experimental Study. arXiv:2412.06593.">[3]</a></sup>.</p>
 <h2 id="how-teams-get-this-wrong">How Teams Get This Wrong</h2>
@@ -155,7 +155,8 @@
 <p><strong>Jury research.</strong> Studies on jury behavior show that the first and last witnesses in a trial have disproportionate influence on verdicts. Same U-shaped curve. Same mechanism. (<a href="https://www.researchgate.net/publication/385853184_THE_PSYCHOLOGY_OF_JURY_DECISION-MAKING_IN_CRIMINAL_TRIALS">source</a>)</p>
 <hr>
 <h2 id="changelog">Changelog</h2>
-<p><strong>2026-06-01</strong> Added hero image.<br>
+<p><strong>2026-08-08</strong> Rewrote the Anchoring section.
+<strong>2026-06-01</strong> Added hero image.<br>
 <strong>2026-05-16</strong> Replaced Etymology with Outtakes. Added spinning wheel and jury research to Outtakes.<br>
 <strong>2026-05-11</strong> Added etymology section.<br>
 <strong>2026-05-07</strong> Initial publication.</p>
