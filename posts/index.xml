@@ -28,26 +28,6 @@
     </item>
     
     <item>
-      <title>Luck</title>
-      <link>https://lyletagawa.com/posts/luck/</link>
-      <pubDate>Sun, 26 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://lyletagawa.com/posts/luck/</guid>
-      <description>Luck decides more than most are willing to admit. Hard work and grit determine how ready you are for it.</description>
-      <media:content url="https://lyletagawa.com/images/luck.png" medium="image" />
-    </item>
-    
-    <item>
-      <title>Hyrum&#39;s Law</title>
-      <link>https://lyletagawa.com/posts/hyrums-law/</link>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://lyletagawa.com/posts/hyrums-law/</guid>
-      <description>Hyrum&amp;rsquo;s Law says that with enough users, every observable behavior becomes a depended-upon feature. Your implementation details become your API contract, regardless of documentation or intent.</description>
-      <media:content url="https://lyletagawa.com/images/hyrums-law.jpg" medium="image" />
-    </item>
-    
-    <item>
       <title>Functioning As Designed</title>
       <link>https://lyletagawa.com/posts/functioning-as-designed/</link>
       <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
