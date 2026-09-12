@@ -53,33 +53,6 @@
     </item>
     
     <item>
-      <title>complexity</title>
-      <link>https://lyletagawa.com/tags/complexity/</link>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://lyletagawa.com/tags/complexity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>safety</title>
-      <link>https://lyletagawa.com/tags/safety/</link>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://lyletagawa.com/tags/safety/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>systems</title>
-      <link>https://lyletagawa.com/tags/systems/</link>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://lyletagawa.com/tags/systems/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>latency</title>
       <link>https://lyletagawa.com/tags/latency/</link>
       <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
@@ -175,6 +148,15 @@
       <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
       
       <guid>https://lyletagawa.com/tags/resilience/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>safety</title>
+      <link>https://lyletagawa.com/tags/safety/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://lyletagawa.com/tags/safety/</guid>
       <description></description>
     </item>
     
