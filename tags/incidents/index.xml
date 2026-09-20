@@ -18,16 +18,6 @@
     </item>
     
     <item>
-      <title>Distributed Causation</title>
-      <link>https://lyletagawa.com/posts/distributed-causation/</link>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://lyletagawa.com/posts/distributed-causation/</guid>
-      <description>Distributed causation means complex failures have many causes spread across time, systems, and organizational boundaries. Fixing just one leaves the rest in place.</description>
-      <media:content url="https://lyletagawa.com/images/distributed-causation.jpg" medium="image" />
-    </item>
-    
-    <item>
       <title>PagerDuty Summit 2020</title>
       <link>https://lyletagawa.com/posts/pagerduty-summit-2020/</link>
       <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>

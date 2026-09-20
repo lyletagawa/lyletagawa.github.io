@@ -6,17 +6,7 @@
     <description>Recent content in leadership on hi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 07 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://lyletagawa.com/tags/leadership/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>LLM Context Biases</title>
-      <link>https://lyletagawa.com/posts/llm-context-biases/</link>
-      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://lyletagawa.com/posts/llm-context-biases/</guid>
-      <description>Primacy bias, recency bias, sycophancy, and anchoring are predictable distortions in how LLMs weight information. Understanding them changes how you prompt, evaluate, and trust model outputs.</description>
-      <media:content url="https://lyletagawa.com/images/llm-context-biases.jpg" medium="image" />
-    </item>
-    
+    <lastBuildDate>Mon, 05 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://lyletagawa.com/tags/leadership/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Turn the Ship Around!</title>
       <link>https://lyletagawa.com/posts/turn-the-ship-around/</link>
